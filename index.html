@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POWER WASH CYCLES | Bike & Detailing Studio a Domicilio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Teko:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#FF2A2A',
+                            darkRed: '#CC0000',
+                            bg: '#0F0F12',
+                            card: '#18181C',
+                            border: '#2A2A32',
+                            textMuted: '#9CA3AF'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        heading: ['Teko', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+     <style>
+        .glow-red {
+            box-shadow: 0 0 20px rgba(255, 42, 42, 0.35);
+        }
+        .glow-red-lg {
+            box-shadow: 0 0 35px rgba(255, 42, 42, 0.5);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .text-stroke-red {
+            -webkit-text-stroke: 1px #FF2A2A;
+        }
+    </style>
+
+    </head>
+<body class="bg-brand-bg text-white font-sans antialiased selection:bg-brand-red selection:text-white pb-20 md:pb-0">
+
+    <nav class="sticky top-0 z-50 bg-brand-bg/90 backdrop-blur-md border-b border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-brand-red flex items-center justify-center text-black font-black text-xl transform group-hover:rotate-6 transition-transform">
+                        <i class="fa-solid fa-motorcycle text-white"></i>
+                    </div>
+                    <div>
+                        <span class="font-heading text-28px sm:text-3xl tracking-wider uppercase block leading-none font-bold">POWER WASH <span class="text-brand-red">CYCLES</span></span>
+                        <span class="text-[10px] tracking-widest text-brand-textMuted uppercase block -mt-1 font-semibold">Bike & Detailing Studio</span>
+                    </div>
+                </a>
+
+                 <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center gap-6 text-sm font-semibold uppercase tracking-wider">
+                    <a href="#servicios" class="hover:text-brand-red transition-colors">Servicios</a>
+                    <a href="#tarifas" class="hover:text-brand-red transition-colors">Tarifas</a>
+                    <a href="#combos" class="hover:text-brand-red transition-colors">Combos</a>
+                    <a href="#adicionales" class="hover:text-brand-red transition-colors">Adicionales</a>
+                    <a href="#cotizador" class="hover:text-brand-red transition-colors">Cotizador</a>
+                    <a href="#rifa" class="hover:text-brand-red text-brand-red transition-colors flex items-center gap-1.5"><i class="fa-solid fa-ticket"></i> Rifa</a>
+                </div>
+
+                <!-- Call to Action Button -->
+                <div class="hidden sm:flex items-center">
+                    <a href="https://wa.me/50379563814?text=Hola%20Power%20Wash%20Cycles,%20quisiera%20agendar%20un%20servicio%20para%20mi%20moto." target="_blank" class="bg-brand-red hover:bg-brand-darkRed text-white px-5 py-2.5 rounded-xl font-bold text-sm tracking-wide transition-all shadow-lg glow-red flex items-center gap-2 transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Reservar Ahora
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-card border-b border-brand-border px-4 pt-2 pb-6 space-y-3 font-semibold uppercase text-sm">
+            <a href="#servicios" class="block py-2 border-b border-brand-border/40 hover:text-brand-red">Servicios</a>
+            <a href="#tarifas" class="block py-2 border-b border-brand-border/40 hover:text-brand-red">Tarifas</a>
+            <a href="#combos" class="block py-2 border-b border-brand-border/40 hover:text-brand-red">Combos Especiales</a>
+            <a href="#adicionales" class="block py-2 border-b border-brand-border/40 hover:text-brand-red">Adicionales</a>
+            <a href="#cotizador" class="block py-2 border-b border-brand-border/40 hover:text-brand-red">Cotizador Online</a>
+            <a href="#rifa" class="block py-2 text-brand-red font-bold"> Gran Rifa Suzuki 150</a>
+            <a href="https://wa.me/50379563814?text=Hola%20Power%20Wash%20Cycles,%20quisiera%20agendar%20un%20servicio%20para%20mi%20moto." target="_blank" class="w-full bg-brand-red text-white py-3 rounded-xl font-bold text-center block mt-4 shadow-lg flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Agenda tu Cita por WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative bg-grid-pattern py-16 lg:py-24 overflow-hidden border-b border-brand-border/40">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-bg via-brand-bg/90 to-transparent z-10"></div>
+        <div class="absolute top-1/2 right-0 -translate-y-1/2 w-full lg:w-1/2 h-full opacity-20 lg:opacity-30 pointer-events-none flex justify-end items-center">
+            <i class="fa-solid fa-motorcycle text-[300px] lg:text-[450px] text-white/10 -mr-20"></i>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-red/10 border border-brand-red/30 px-4 py-1.5 rounded-full text-brand-red text-xs sm:text-sm font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-truck-fast"></i> ¡Servicio Profesional 100% a Domicilio!
+                    </div>
+                    
+                    <h1 class="font-heading text-6xl sm:text-7xl lg:text-8xl uppercase font-extrabold tracking-tight leading-none text-white">
+                        POWER WASH <span class="text-brand-red">CYCLES</span>
+                    </h1>
+                    
+                    <p class="text-xl sm:text-2xl text-gray-300 font-light max-w-2xl leading-relaxed italic">
+                        Cuidado y detalle profesional para tu moto en la puerta de tu casa.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://wa.me/50379563814?text=Hola%20Power%20Wash%20Cycles,%20quisiera%20agendar%20un%20servicio%20para%20mi%20moto." target="_blank" class="w-full sm:w-auto bg-brand-red hover:bg-brand-darkRed text-white px-8 py-4 rounded-xl font-bold text-lg tracking-wide transition-all shadow-xl glow-red flex items-center justify-center gap-3 group">
+                            <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+                            <span>Agendar por WhatsApp</span>
+                        </a>
+                        <a href="#cotizador" class="w-full sm:w-auto bg-brand-card hover:bg-brand-border text-white border border-brand-border px-8 py-4 rounded-xl font-bold text-lg tracking-wide transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calculator text-brand-red"></i>
+                            <span>Cotizar Servicio</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Highlights -->
+                    <div class="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-brand-border/60 text-left">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-shield-halved text-brand-red text-xl"></i>
+                            <span class="text-xs sm:text-sm text-gray-300 font-medium">Insumos Premium para Cadenas O/X/Z Ring</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-bolt text-brand-red text-xl"></i>
+                            <span class="text-xs sm:text-sm text-gray-300 font-medium">Lavados de Motor con Protección Eléctrica</span>
+                        </div>
+                        <div class="flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-location-dot text-brand-red text-xl"></i>
+                            <span class="text-xs sm:text-sm text-gray-300 font-medium">Lourdes Colón y zonas aledañas</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Info Card Banner -->
+                <div class="lg:col-span-5">
+                    <div class="bg-brand-card/90 backdrop-blur-md border border-brand-border p-6 sm:p-8 rounded-2xl shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-brand-red text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-bl-xl">
+                            Información General
+                        </div>
+                        
+                        <h2 class="font-heading text-3xl uppercase font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-info text-brand-red"></i> Datos del Estudio
+                        </h2>
+
+                        <ul class="space-y-4 text-sm sm:text-base">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-location-dot text-brand-red text-lg mt-1"></i>
+                                <div>
+                                    <strong class="block text-white font-semibold">Ubicación:</strong>
+                                    <span class="text-brand-textMuted">Cantón El Cobanal, Lourdes Colón, El Salvador.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-regular fa-clock text-brand-red text-lg mt-1"></i>
+                                <div>
+                                    <strong class="block text-white font-semibold">Horarios de Atención:</strong>
+                                    <span class="text-brand-textMuted block">Lunes a Viernes: 6:00 PM - 10:00 PM</span>
+                                    <span class="text-brand-textMuted block">Sábado y Domingo: 7:00 AM - 5:00 PM</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-phone text-brand-red text-lg mt-1"></i>
+                                <div>
+                                    <strong class="block text-white font-semibold">Contacto Directo:</strong>
+                                    <a href="tel:+50379563814" class="text-brand-red font-bold hover:underline">+503 7956 3814</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-brands fa-instagram text-brand-red text-lg mt-1"></i>
+                                <div>
+                                    <strong class="block text-white font-semibold">Redes Sociales:</strong>
+                                    <span class="text-brand-textMuted">@POWERWASHCYCLES</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6 pt-6 border-t border-brand-border">
+                            <a href="https://wa.me/50379563814" target="_blank" class="w-full bg-brand-red/10 border border-brand-red/40 hover:bg-brand-red text-brand-red hover:text-white transition-colors text-center py-3 rounded-xl font-bold block text-sm tracking-wide">
+                                <i class="fa-brands fa-whatsapp mr-2"></i> Chatear por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="font-heading text-5xl sm:text-6xl uppercase font-extrabold tracking-tight text-white">
+                MENÚ DE <span class="text-brand-red">SERVICIOS</span>
+            </h2>
+            <p class="text-brand-textMuted text-lg mt-2">
+                Niveles de detallado especializado adaptados a la necesidad y exigencia de tu vehículo.
+            </p>
+            <div class="w-24 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Servicio 1 -->
+            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl flex flex-col justify-between hover:border-brand-red/50 transition-all duration-300 group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-gray-800 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase"><i class="fa-regular fa-clock mr-1"></i> 20 - 25 min</span>
+                        <i class="fa-solid fa-shower text-3xl text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-3xl font-bold uppercase text-white mb-2">LAVADO EXPRESS</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                        Enjuague a presión, aplicación de champú con pH neutro, secado delicado con microfibra y abrillantador protector de llantas.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-brand-border/60">
+                    <a href="#cotizador" onclick="selectService('express')" class="text-brand-red font-bold text-sm uppercase flex items-center gap-1 hover:gap-2 transition-all">
+                        Cotizar este lavado <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+             <!-- Servicio 2 -->
+            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl flex flex-col justify-between hover:border-brand-red/50 transition-all duration-300 group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-gray-800 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase"><i class="fa-regular fa-clock mr-1"></i> 40 - 50 min</span>
+                        <i class="fa-solid fa-soap text-3xl text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-3xl font-bold uppercase text-white mb-2">LAVADO FULL + DESENGRASADO</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                        Incluye Express + desengrasado profundo de rines, tijera y piñón, lubricación especializada de cadena e hidratación de plásticos.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-brand-border/60">
+                    <a href="#cotizador" onclick="selectService('full')" class="text-brand-red font-bold text-sm uppercase flex items-center gap-1 hover:gap-2 transition-all">
+                        Cotizar este lavado <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="bg-brand-card border-2 border-brand-red p-6 rounded-2xl flex flex-col justify-between relative shadow-xl glow-red/20 group">
+                <div class="absolute -top-3 right-4 bg-brand-red text-white text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full tracking-wider">
+                    RECOMENDADO
+                </div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-brand-red/20 text-brand-red text-xs font-bold px-3 py-1 rounded-full uppercase"><i class="fa-regular fa-clock mr-1"></i> 1.5 - 2 hrs</span>
+                        <i class="fa-solid fa-sparkles text-3xl text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-3xl font-bold uppercase text-white mb-2">MOTO DETAIL PRO</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                        Incluye Full + descontaminado de metales en rines, limpieza técnica de motor, encerado protector carnauba/sintético y protección UV.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-brand-border/60">
+                    <a href="#cotizador" onclick="selectService('detail_pro')" class="text-brand-red font-bold text-sm uppercase flex items-center gap-1 hover:gap-2 transition-all">
+                        Cotizar este lavado <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl flex flex-col justify-between hover:border-brand-red/50 transition-all duration-300 group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="bg-gray-800 text-gray-300 text-xs font-bold px-3 py-1 rounded-full uppercase"><i class="fa-regular fa-clock mr-1"></i> 3 - 4 hrs</span>
+                        <i class="fa-solid fa-gem text-3xl text-brand-red group-hover:scale-110 transition-transform"></i>
+                    </div>
+                    <h3 class="font-heading text-3xl font-bold uppercase text-white mb-2">DETALLADO CERÁMICO COMPLETE</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed mb-4">
+                        Incluye Detail Pro + descontaminado con Clay Bar, pulido en 1 paso, sellador cerámico de alto brillo (3-6 meses) y desinfección de casco gratis.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-brand-border/60">
+                    <a href="#cotizador" onclick="selectService('ceramico')" class="text-brand-red font-bold text-sm uppercase flex items-center gap-1 hover:gap-2 transition-all">
+                        Cotizar este lavado <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifas" class="py-20 bg-brand-card/50 border-y border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-5xl sm:text-6xl uppercase font-extrabold tracking-tight text-white">
+                    TARIFAS POR <span class="text-brand-red">CILINDRAJE</span>
+                </h2>
+                <p class="text-brand-textMuted text-lg mt-2">
+                    Precios transparentes y ajustados según el tamaño e ingeniería de tu motocicleta.
+                </p>
+                <div class="w-24 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Precios Cards / Tabla Adaptativa -->
+            <div class="grid lg:grid-cols-3 gap-8">
+
+                <!-- Categoría Bajo Cilindraje -->
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden hover:border-brand-red/60 transition-all">
+                    <div class="bg-gradient-to-r from-gray-900 to-black p-6 border-b border-brand-border">
+                        <span class="text-brand-red text-xs font-bold uppercase tracking-widest block mb-1">Gama Urbana & Scooter</span>
+                        <h3 class="font-heading text-4xl font-extrabold uppercase text-white">BAJO CILINDRAJE</h3>
+                        <p class="text-brand-textMuted text-sm font-semibold">100cc - 200cc</p>
+                    </div><div class="p-6 space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Lavado Express</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$4.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Lavado Full</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$7.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Moto Detail Pro</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$15.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="text-gray-300 font-medium">Detallado Cerámico</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$30.00</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-black/40 border-t border-brand-border/40">
+                        <a href="#cotizador" onclick="selectCc('bajo')" class="w-full bg-brand-border hover:bg-brand-red hover:text-white transition-colors text-center py-2.5 rounded-xl text-sm font-bold block uppercase tracking-wider">
+                            Seleccionar este Cilindraje
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Categoría Mediano Cilindraje -->
+                <div class="bg-brand-card border-2 border-brand-red/80 rounded-2xl overflow-hidden shadow-xl relative transform lg:-translate-y-2">
+                    <div class="bg-gradient-to-r from-brand-red/20 to-black p-6 border-b border-brand-border">
+                        <span class="text-brand-red text-xs font-bold uppercase tracking-widest block mb-1">Gama Intermedia & Sport</span>
+                        <h3 class="font-heading text-4xl font-extrabold uppercase text-white">MEDIANO CILINDRAJE</h3>
+                        <p class="text-brand-textMuted text-sm font-semibold">250cc - 500cc</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Lavado Express</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$5.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Lavado Full</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$9.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Moto Detail Pro</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$20.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="text-gray-300 font-medium">Detallado Cerámico</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$40.00</span>
+                        </div>
+                        </div>
+                    <div class="p-6 bg-black/40 border-t border-brand-border/40">
+                        <a href="#cotizador" onclick="selectCc('mediano')" class="w-full bg-brand-red hover:bg-brand-darkRed text-white transition-colors text-center py-2.5 rounded-xl text-sm font-bold block uppercase tracking-wider glow-red">
+                            Seleccionar este Cilindraje
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Categoría Alto Cilindraje -->
+                <div class="bg-brand-card border border-brand-border rounded-2xl overflow-hidden hover:border-brand-red/60 transition-all">
+                    <div class="bg-gradient-to-r from-gray-900 to-black p-6 border-b border-brand-border">
+                        <span class="text-brand-red text-xs font-bold uppercase tracking-widest block mb-1">Gama Alta & Maxiscooters</span>
+                        <h3 class="font-heading text-4xl font-extrabold uppercase text-white">ALTO CILINDRAJE</h3>
+                        <p class="text-brand-textMuted text-sm font-semibold">600cc + / Maxiscooters</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Lavado Express</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$7.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Lavado Full</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$12.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-brand-border/40">
+                            <span class="text-gray-300 font-medium">Moto Detail Pro</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$25.00</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="text-gray-300 font-medium">Detallado Cerámico</span>
+                            <span class="font-heading text-3xl font-bold text-brand-red">$50.00</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-black/40 border-t border-brand-border/40">
+                        <a href="#cotizador" onclick="selectCc('alto')" class="w-full bg-brand-border hover:bg-brand-red hover:text-white transition-colors text-center py-2.5 rounded-xl text-sm font-bold block uppercase tracking-wider">
+                            Seleccionar este Cilindraje
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="combos" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12">
+            
+            <!-- Combos Especiales -->
+            <div>
+                <div class="mb-8">
+                    <span class="text-brand-red font-bold uppercase tracking-widest text-xs">¡Combina y Ahorra!</span>
+                    <h2 class="font-heading text-5xl uppercase font-extrabold text-white">COMBOS <span class="text-brand-red">ESPECIALES</span></h2>
+                    <p class="text-brand-textMuted text-sm">Aprovecha nuestros paquetes diseñados para la máxima protección.</p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Combo 1 -->
+                    <div class="bg-brand-card border border-brand-border p-6 rounded-2xl relative overflow-hidden group hover:border-brand-red/60 transition-all">
+                        <div class="absolute -top-1 -right-1 bg-brand-red text-white text-[10px] font-black uppercase px-3 py-1 rounded-bl-xl tracking-wider">
+                            AHORRAS $2.00
+                        </div>
+                        <h3 class="font-heading text-3xl font-bold uppercase text-white mb-1">COMBO RIDER URBANO</h3>
+                        <p class="text-brand-textMuted text-sm mb-4">Lavado Full + Limpieza y Desinfección de Casco</p>
+                        <div class="flex items-baseline gap-3">
+                            <span class="font-heading text-5xl font-black text-brand-red">$10.00</span>
+                            <span class="text-gray-500 line-through text-lg font-bold">$12.00</span>
+                        </div>
+                        <button onclick="selectCombo('urbano')" class="mt-4 w-full bg-brand-red/10 border border-brand-red/40 hover:bg-brand-red text-brand-red hover:text-white py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-colors">
+                            Añadir a Cotización
+                        </button>
+                    </div>
+
+                    <!-- Combo 2 -->
+                    <div class="bg-brand-card border-2 border-brand-red p-6 rounded-2xl relative overflow-hidden shadow-lg glow-red/20">
+                        <div class="absolute -top-1 -right-1 bg-brand-red text-white text-[10px] font-black uppercase px-3 py-1 rounded-bl-xl tracking-wider">
+                            AHORRAS $5.00
+                        </div>
+                        <h3 class="font-heading text-3xl font-bold uppercase text-white mb-1">COMBO RUTA / FIN DE SEMANA</h3>
+                        <p class="text-brand-textMuted text-sm mb-4">Moto Detail Pro + Limpieza de Casco + Aplicación de Cera Hidrofóbica</p>
+                        <div class="flex items-baseline gap-3">
+                            <span class="font-heading text-5xl font-black text-brand-red">$22.00</span>
+                            <span class="text-gray-500 line-through text-lg font-bold">$27.00</span>
+                        </div>
+                        <button onclick="selectCombo('ruta')" class="mt-4 w-full bg-brand-red text-white py-2 rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-brand-darkRed transition-colors glow-red">
+                            Añadir a Cotización
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicios Adicionales -->
+            <div id="adicionales">
+                <div class="mb-8">
+                    <span class="text-brand-red font-bold uppercase tracking-widest text-xs">Cuidado Integral</span>
+                    <h2 class="font-heading text-5xl uppercase font-extrabold text-white">SERVICIOS <span class="text-brand-red">ADICIONALES</span></h2>
+                    <p class="text-brand-textMuted text-sm">Detalles extra para tu equipamiento personal y acabados de la moto.</p>
+                </div>
+
+                <div class="bg-brand-card border border-brand-border rounded-2xl p-6 divide-y divide-brand-border/60">
+                    
+                    <div class="py-3.5 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-helmet-safety text-brand-red text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Limpieza y Desinfección de Casco</h4>
+                                <span class="text-xs text-brand-textMuted">Higiene interna y tratamiento externo</span>
+                            </div>
+                        </div>
+                        <span class="font-heading text-2xl font-bold text-white">$5.00</span>
+                    </div>
+
+                    <div class="py-3.5 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-wand-magic-sparkles text-brand-red text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Restauración de Plásticos Blanqueados</h4>
+                                <span class="text-xs text-brand-textMuted">Recupera el tono negro original</span>
+                            </div>
+                        </div>
+                        <span class="font-heading text-2xl font-bold text-white">$6.00 - $10.00</span>
+                    </div>
+
+                    <div class="py-3.5 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-eye text-brand-red text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Pulido de Visor / Óptica de Faro</h4>
+                                <span class="text-xs text-brand-textMuted">Eliminación de micro-rayas y claridad</span>
+                            </div>
+                        </div>
+                        <span class="font-heading text-2xl font-bold text-white">$5.00</span>
+                    </div>
+
+                    <div class="py-3.5 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-vest text-brand-red text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Limpieza y Encerado de Chamarra/Traje de Cuero</h4>
+                                <span class="text-xs text-brand-textMuted">Nutrición y protección del cuero</span>
+                            </div>
+                        </div>
+                        <span class="font-heading text-2xl font-bold text-white">$8.00</span>
+                    </div>
+
+                    <div class="py-3.5 flex justify-between items-center">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-droplet text-brand-red text-xl"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Tratamiento Hidrofóbico (Visor y Espejos)</h4>
+                                <span class="text-xs text-brand-textMuted">Repelente de agua para rodar con lluvia</span>
+                            </div>
+                        </div>
+                        <span class="font-heading text-2xl font-bold text-white">$3.00</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="rifa" class="py-16 bg-gradient-to-r from-black via-brand-card to-black border-y-2 border-brand-red relative overflow-hidden my-12">
+        <div class="absolute inset-0 bg-grid-pattern opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-brand-red text-white text-xs font-black uppercase px-4 py-1.5 rounded-full tracking-widest shadow-lg">
+                        <i class="fa-solid fa-trophy"></i> ¡Evento Especial del Año!
+                    </div>
+                    
+                    <h2 class="font-heading text-6xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white leading-none">
+                        ¡GRAN <span class="text-brand-red">RIFA!</span>
+                    </h2>
+
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-xl sm:text-2xl text-gray-300 uppercase font-semibold">Valor del boleto:</span>
+                        <span class="font-heading text-6xl font-extrabold text-brand-red">$15.00</span>
+                    </div>
+
+                    <div class="bg-black/60 border border-brand-border p-6 rounded-2xl">
+                        <h3 class="text-white font-bold text-lg mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-gift text-brand-red"></i> ¿Qué incluye el premio principal?
+                        </h3>
+                        <ul class="grid sm:grid-cols-2 gap-3 text-sm text-gray-200">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-red"></i> <span><strong>Motocicleta 150 Suzuki</strong></span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-red"></i> <span>2 Cascos AGV</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-red"></i> <span>2 Intercomunicadores</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-red"></i> <span>2 Guantes Alpinestars</span></li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand-red"></i> <span>2 Jackets Alpinestars</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <div class="bg-brand-red/20 border border-brand-red/50 text-white font-bold px-6 py-3 rounded-xl text-center w-full sm:w-auto">
+                            <span class="block text-xs uppercase text-brand-red">Fecha de Rifa</span>
+                            <span class="text-xl font-heading uppercase">15 DE NOVIEMBRE</span>
+                        </div>
+
+                        <a href="https://wa.me/50379563814?text=Hola,%20quiero%20comprar%20boletos%20para%20la%20GRAN%20RIFA%20Suzuki%20150." target="_blank" class="w-full sm:w-auto bg-brand-red hover:bg-brand-darkRed text-white px-8 py-3.5 rounded-xl font-bold uppercase tracking-wider text-center transition-all glow-red flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-ticket text-xl"></i> Comprar Boleto $15
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Imagen Representativa de la Rifa -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md bg-gradient-to-b from-brand-red/20 to-transparent p-6 rounded-3xl border border-brand-border text-center">
+                        <i class="fa-solid fa-motorcycle text-9xl text-brand-red drop-shadow-2xl my-4"></i>
+                        <div class="font-heading text-4xl font-extrabold uppercase text-white mt-2">SUZUKI GIXXER 150</div>
+                        <p class="text-xs text-brand-textMuted uppercase tracking-widest mt-1">¡Totalmente equipada con accesorios Alpinestars & AGV!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="cotizador" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="font-heading text-5xl sm:text-6xl uppercase font-extrabold tracking-tight text-white">
+                COTIZADOR <span class="text-brand-red">EN LÍNEA</span>
+            </h2>
+            <p class="text-brand-textMuted text-lg mt-2">
+                Selecciona la cilindrada de tu moto, el servicio deseado y calcula el costo exacto al instante.
+            </p>
+            <div class="w-24 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-10 shadow-2xl">
+            <div class="grid lg:grid-cols-12 gap-10">
+                
+                <!-- Opciones del Cotizador -->
+                <div class="lg:col-span-7 space-y-8">
+                    
+                    <!-- Step 1: Cilindraje -->
+                    <div>
+                        <label class="block text-white font-bold text-lg mb-3 flex items-center gap-2">
+                            <span class="w-7 h-7 bg-brand-red text-white rounded-full flex items-center justify-center text-xs font-black">1</span>
+                            Selecciona el Cilindraje de tu Moto:
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button type="button" onclick="setCc('bajo')" id="btn-cc-bajo" class="cc-btn bg-black/50 border-2 border-brand-border hover:border-brand-red p-4 rounded-xl text-left transition-all">
+                                <span class="block font-bold text-white text-sm">Bajo Cilindraje</span>
+                                <span class="text-xs text-brand-textMuted">100cc - 200cc</span>
+                            </button>
+                            <button type="button" onclick="setCc('mediano')" id="btn-cc-mediano" class="cc-btn bg-black/50 border-2 border-brand-border hover:border-brand-red p-4 rounded-xl text-left transition-all">
+                                <span class="block font-bold text-white text-sm">Mediano Cilindraje</span>
+                                <span class="text-xs text-brand-textMuted">250cc - 500cc</span>
+                            </button>
+                            <button type="button" onclick="setCc('alto')" id="btn-cc-alto" class="cc-btn bg-black/50 border-2 border-brand-border hover:border-brand-red p-4 rounded-xl text-left transition-all">
+                                <span class="block font-bold text-white text-sm">Alto Cilindraje</span>
+                                <span class="text-xs text-brand-textMuted">600cc + / Maxi</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Servicio o Combo -->
+                    <div>
+                        <label class="block text-white font-bold text-lg mb-3 flex items-center gap-2">
+                            <span class="w-7 h-7 bg-brand-red text-white rounded-full flex items-center justify-center text-xs font-black">2</span>
+                            Selecciona el Servicio Principal o Combo:
+                        </label>
+                        <div class="space-y-2">
+                            <label class="flex items-center p-3.5 bg-black/40 border border-brand-border rounded-xl cursor-pointer hover:border-brand-red/50 transition-colors">
+                                <input type="radio" name="service" value="express" onchange="calculateTotal()" class="accent-brand-red w-4 h-4">
+                                <div class="ml-3 flex-1 flex justify-between items-center">
+                                    <span class="text-sm font-semibold text-white">Lavado Express</span>
+                                    <span id="price-express" class="font-heading text-xl font-bold text-brand-red">$0.00</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-3.5 bg-black/40 border border-brand-border rounded-xl cursor-pointer hover:border-brand-red/50 transition-colors">
+                                <input type="radio" name="service" value="full" onchange="calculateTotal()" class="accent-brand-red w-4 h-4" checked>
+                                <div class="ml-3 flex-1 flex justify-between items-center">
+                                    <span class="text-sm font-semibold text-white">Lavado Full + Desengrasado</span>
+                                    <span id="price-full" class="font-heading text-xl font-bold text-brand-red">$0.00</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-3.5 bg-black/40 border border-brand-border rounded-xl cursor-pointer hover:border-brand-red/50 transition-colors">
+                                <input type="radio" name="service" value="detail_pro" onchange="calculateTotal()" class="accent-brand-red w-4 h-4">
+                                <div class="ml-3 flex-1 flex justify-between items-center">
+                                    <span class="text-sm font-semibold text-white">Moto Detail Pro</span>
+                                    <span id="price-detail_pro" class="font-heading text-xl font-bold text-brand-red">$0.00</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-3.5 bg-black/40 border border-brand-border rounded-xl cursor-pointer hover:border-brand-red/50 transition-colors">
+                                <input type="radio" name="service" value="ceramico" onchange="calculateTotal()" class="accent-brand-red w-4 h-4">
+                                <div class="ml-3 flex-1 flex justify-between items-center">
+                                    <span class="text-sm font-semibold text-white">Detallado Cerámico Complete</span>
+                                    <span id="price-ceramico" class="font-heading text-xl font-bold text-brand-red">$0.00</span>
+                                </div>
+                            </label>
+
+                            <!-- Combos fijos -->
+                            <label class="flex items-center p-3.5 bg-black/40 border border-brand-red/40 rounded-xl cursor-pointer hover:border-brand-red transition-colors">
+                                <input type="radio" name="service" value="combo_urbano" onchange="calculateTotal()" class="accent-brand-red w-4 h-4">
+                                <div class="ml-3 flex-1 flex justify-between items-center">
+                                    <span class="text-sm font-semibold text-white">Combo Rider Urbano (Full + Casco)</span>
+                                    <span class="font-heading text-xl font-bold text-brand-red">$10.00</span>
+                                </div>
+                            </label>
+
+                            <label class="flex items-center p-3.5 bg-black/40 border border-brand-red/40 rounded-xl cursor-pointer hover:border-brand-red transition-colors">
+                                <input type="radio" name="service" value="combo_ruta" onchange="calculateTotal()" class="accent-brand-red w-4 h-4">
+                                <div class="ml-3 flex-1 flex justify-between items-center">
+                                    <span class="text-sm font-semibold text-white">Combo Ruta / Fin de Semana (Detail Pro + Casco + Cera)</span>
+                                    <span class="font-heading text-xl font-bold text-brand-red">$22.00</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Extras -->
+                    <div>
+                        <label class="block text-white font-bold text-lg mb-3 flex items-center gap-2">
+                            <span class="w-7 h-7 bg-brand-red text-white rounded-full flex items-center justify-center text-xs font-black">3</span>
+                            Servicios Adicionales Opcionales:
+                        </label>
+                        <div class="grid sm:grid-cols-2 gap-2">
+                            <label class="flex items-center p-3 bg-black/40 border border-brand-border rounded-xl cursor-pointer">
+                                <input type="checkbox" id="ext-casco" onchange="calculateTotal()" class="accent-brand-red w-4 h-4 rounded">
+                                <span class="ml-2 text-xs text-white">Limpieza Casco (+$5.00)</span>
+                            </label>
+
+                            <label class="flex items-center p-3 bg-black/40 border border-brand-border rounded-xl cursor-pointer">
+                                <input type="checkbox" id="ext-plasticos" onchange="calculateTotal()" class="accent-brand-red w-4 h-4 rounded">
+                                <span class="ml-2 text-xs text-white">Rest. Plásticos (+$8.00)</span>
+                            </label>
+
+                            <label class="flex items-center p-3 bg-black/40 border border-brand-border rounded-xl cursor-pointer">
+                                <input type="checkbox" id="ext-visor" onchange="calculateTotal()" class="accent-brand-red w-4 h-4 rounded">
+                                <span class="ml-2 text-xs text-white">Pulido Visor/Faro (+$5.00)</span>
+                            </label>
+
+                            <label class="flex items-center p-3 bg-black/40 border border-brand-border rounded-xl cursor-pointer">
+                                <input type="checkbox" id="ext-cuero" onchange="calculateTotal()" class="accent-brand-red w-4 h-4 rounded">
+                                <span class="ml-2 text-xs text-white">Encerado Cuero (+$8.00)</span>
+                            </label>
+
+                            <label class="flex items-center p-3 bg-black/40 border border-brand-border rounded-xl cursor-pointer sm:col-span-2">
+                                <input type="checkbox" id="ext-hidrofobico" onchange="calculateTotal()" class="accent-brand-red w-4 h-4 rounded">
+                                <span class="ml-2 text-xs text-white">Tratamiento Hidrofóbico Visor/Espejos (+$3.00)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Resumen y Envió por WhatsApp -->
+                <div class="lg:col-span-5 flex flex-col justify-between bg-black/60 border border-brand-border p-6 sm:p-8 rounded-2xl">
+                    <div>
+                        <h3 class="font-heading text-3xl font-extrabold uppercase text-white mb-6 pb-2 border-b border-brand-border flex items-center justify-between">
+                            <span>RESUMEN</span>
+                            <i class="fa-solid fa-receipt text-brand-red"></i>
+                        </h3>
+
+                        <div id="summary-details" class="space-y-3 text-sm text-gray-300">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="pt-8 mt-8 border-t border-brand-border">
+                        <div class="flex justify-between items-baseline mb-6">
+                            <span class="text-gray-400 font-bold uppercase text-sm">TOTAL ESTIMADO:</span>
+                            <span id="final-price" class="font-heading text-6xl font-black text-brand-red">$0.00</span>
+                        </div>
+
+                        <button id="send-whatsapp-btn" onclick="sendToWhatsapp()" class="w-full bg-brand-red hover:bg-brand-darkRed text-white py-4 rounded-xl font-bold uppercase tracking-wider transition-all glow-red flex items-center justify-center gap-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Agendar con esta Cotización</span>
+                        </button>
+                        <p class="text-[11px] text-center text-brand-textMuted mt-3">
+                            <i class="fa-solid fa-truck text-brand-red mr-1"></i> Servicio a domicilio sujeto a cobertura en Lourdes Colón y zonas cercanas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-brand-card/40 border-t border-brand-border/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-heading text-4xl uppercase font-extrabold text-white">
+                    TÉRMINOS Y <span class="text-brand-red">RECOMENDACIONES</span>
+                </h2>
+                <p class="text-brand-textMuted text-sm">Información importante antes de agendar tu servicio a domicilio.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red/30 rounded-xl flex items-center justify-center text-brand-red text-xl font-bold mb-4">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Requisitos del Sitio</h3>
+                    <p class="text-xs text-brand-textMuted leading-relaxed">
+                        Es indispensable contar con acceso a una toma de agua funcional y una conexión eléctrica cercana al lugar del servicio.
+                    </p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red/30 rounded-xl flex items-center justify-center text-brand-red text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Seguridad Electrónica</h3>
+                    <p class="text-xs text-brand-textMuted leading-relaxed">
+                        Los lavados de motor se realizan con presión totalmente regulada y protección de componentes eléctricos sensibles.
+                    </p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red/30 rounded-xl flex items-center justify-center text-brand-red text-xl font-bold mb-4">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Cuidado de Cadenas</h3>
+                    <p class="text-xs text-brand-textMuted leading-relaxed">
+                        Utilizamos desengrasantes y lubricantes 100% compatibles con retenes e empaques O-Ring, X-Ring y Z-Ring.
+                    </p>
+                </div>
+
+                <div class="bg-brand-card p-6 rounded-2xl border border-brand-border">
+                    <div class="w-12 h-12 bg-brand-red/10 border border-brand-red/30 rounded-xl flex items-center justify-center text-brand-red text-xl font-bold mb-4">
+                        <i class="fa-solid fa-box-archive"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2">Objetos de Valor</h3>
+                    <p class="text-xs text-brand-textMuted leading-relaxed">
+                        Por favor retirar objetos de valor del maletero o bajo el asiento antes de dar inicio a la sesión de detallado.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-brand-red flex items-center justify-center text-black font-black">
+                            <i class="fa-solid fa-motorcycle text-white text-sm"></i>
+                        </div>
+                        <span class="font-heading text-2xl tracking-wider uppercase font-bold text-white">POWER WASH <span class="text-brand-red">CYCLES</span></span>
+                    </a>
+                    <p class="text-xs text-brand-textMuted mt-1">Bike & Detailing Studio • ¡Carwash y detallado profesional a domicilio!</p>
+                </div>
+
+                <div class="flex items-center gap-6 text-sm font-semibold">
+                    <a href="https://wa.me/50379563814" target="_blank" class="text-gray-400 hover:text-brand-red transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> +503 7956 3814
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-gray-400 hover:text-brand-red transition-colors flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-lg"></i> @POWERWASHCYCLES
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-brand-border/40 text-center text-xs text-brand-textMuted">
+                © 2026 POWER WASH CYCLES. Todos los derechos reservados. Cantón El Cobanal, Lourdes Colón, El Salvador.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante para dispositivos móviles -->
+    <div class="fixed bottom-4 right-4 z-50 md:hidden">
+        <a href="https://wa.me/50379563814?text=Hola%20Power%20Wash%20Cycles,%20quisiera%20agendar%20un%20servicio%20para%20mi%20moto." target="_blank" class="bg-brand-red text-white p-4 rounded-full shadow-2xl glow-red flex items-center justify-center">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Datos de Precios por Cilindraje
+        const PRICING = {
+            bajo: { express: 4, full: 7, detail_pro: 15, ceramico: 30, label: 'Bajo Cilindraje (100cc-200cc)' },
+            mediano: { express: 5, full: 9, detail_pro: 20, ceramico: 40, label: 'Mediano Cilindraje (250cc-500cc)' },
+            alto: { express: 7, full: 12, detail_pro: 25, ceramico: 50, label: 'Alto Cilindraje (600cc+ / Maxi)' }
+        };
+
+        const SERVICE_LABELS = {
+            express: 'Lavado Express',
+            full: 'Lavado Full + Desengrasado',
+            detail_pro: 'Moto Detail Pro',
+            ceramico: 'Detallado Cerámico Complete',
+            combo_urbano: 'Combo Rider Urbano',
+            combo_ruta: 'Combo Ruta / Fin de Semana'
+        };
+
+        let selectedCc = 'bajo';
+
+        // Toggle Menú Móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Selección de Cilindraje
+        function setCc(cc) {
+            selectedCc = cc;
+            
+            // Actualizar UI de botones
+            document.querySelectorAll('.cc-btn').forEach(btn => {
+                btn.classList.remove('border-brand-red', 'bg-brand-red/10');
+                btn.classList.add('border-brand-border', 'bg-black/50');
+            });
+
+            const activeBtn = document.getElementById(`btn-cc-${cc}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-brand-border', 'bg-black/50');
+                activeBtn.classList.add('border-brand-red', 'bg-brand-red/10');
+            }
+
+            // Actualizar etiquetas de precios en radio buttons
+            document.getElementById('price-express').innerText = `$${PRICING[cc].express}.00`;
+            document.getElementById('price-full').innerText = `$${PRICING[cc].full}.00`;
+            document.getElementById('price-detail_pro').innerText = `$${PRICING[cc].detail_pro}.00`;
+            document.getElementById('price-ceramico').innerText = `$${PRICING[cc].ceramico}.00`;
+
+            calculateTotal();
+        }
+
+        // Seleccionar Servicio Directamente
+        function selectService(serviceType) {
+            const radio = document.querySelector(`input[name="service"][value="${serviceType}"]`);
+            if (radio) {
+                radio.checked = true;
+                calculateTotal();
+            }
+        }
+
+        function selectCc(ccType) {
+            setCc(ccType);
+        }
+
+        function selectCombo(comboType) {
+            const radio = document.querySelector(`input[name="service"][value="combo_${comboType}"]`);
+            if (radio) {
+                radio.checked = true;
+                calculateTotal();
+            }
+            const cotizador = document.getElementById('cotizador');
+            cotizador.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Lógica de Cálculo de Total
+        function calculateTotal() {
+            let total = 0;
+            const summaryContainer = document.getElementById('summary-details');
+            let summaryHTML = '';
+
+            const selectedServiceRadio = document.querySelector('input[name="service"]:checked');
+            const serviceValue = selectedServiceRadio ? selectedServiceRadio.value : 'full';
+
+            // Cilindraje
+            summaryHTML += `
+                <div class="flex justify-between py-1 border-b border-brand-border/40">
+                    <span class="text-brand-textMuted">Cilindraje:</span>
+                    <span class="font-bold text-white">${PRICING[selectedCc].label}</span>
+                </div>
+            `;
+
+            // Servicio Base o Combo
+            if (serviceValue === 'combo_urbano') {
+                total += 10;
+                summaryHTML += `
+                    <div class="flex justify-between py-1 border-b border-brand-border/40">
+                        <span class="text-brand-textMuted">Combo Urbano:</span>
+                        <span class="font-bold text-brand-red">$10.00</span>
+                    </div>
+                `;
+            } else if (serviceValue === 'combo_ruta') {
+                total += 22;
+                summaryHTML += `
+                    <div class="flex justify-between py-1 border-b border-brand-border/40">
+                        <span class="text-brand-textMuted">Combo Ruta:</span>
+                        <span class="font-bold text-brand-red">$22.00</span>
+                    </div>
+                `;
+            } else {
+                const basePrice = PRICING[selectedCc][serviceValue];
+                total += basePrice;
+                summaryHTML += `
+                    <div class="flex justify-between py-1 border-b border-brand-border/40">
+                        <span class="text-brand-textMuted">${SERVICE_LABELS[serviceValue]}:</span>
+                        <span class="font-bold text-brand-red">$${basePrice}.00</span>
+                    </div>
+                `;
+            }
+
+            // Adicionales
+            let extrasHTML = '';
+            if (document.getElementById('ext-casco').checked) {
+                total += 5;
+                extrasHTML += `<div class="flex justify-between text-xs text-gray-300 pl-2"><span>+ Limpieza Casco</span><span>$5.00</span></div>`;
+            }
+            if (document.getElementById('ext-plasticos').checked) {
+                total += 8;
+                extrasHTML += `<div class="flex justify-between text-xs text-gray-300 pl-2"><span>+ Rest. Plásticos</span><span>$8.00</span></div>`;
+            }
+            if (document.getElementById('ext-visor').checked) {
+                total += 5;
+                extrasHTML += `<div class="flex justify-between text-xs text-gray-300 pl-2"><span>+ Pulido Visor/Faro</span><span>$5.00</span></div>`;
+            }
+            if (document.getElementById('ext-cuero').checked) {
+                total += 8;
+                extrasHTML += `<div class="flex justify-between text-xs text-gray-300 pl-2"><span>+ Encerado Cuero</span><span>$8.00</span></div>`;
+            }
+            if (document.getElementById('ext-hidrofobico').checked) {
+                total += 3;
+                extrasHTML += `<div class="flex justify-between text-xs text-gray-300 pl-2"><span>+ Trat. Hidrofóbico</span><span>$3.00</span></div>`;
+            }
+
+            if (extrasHTML !== '') {
+                summaryHTML += `<div class="py-1 border-b border-brand-border/40"><span class="text-brand-textMuted block mb-1">Adicionales:</span>${extrasHTML}</div>`;
+            }
+
+            summaryContainer.innerHTML = summaryHTML;
+            document.getElementById('final-price').innerText = `$${total}.00`;
+        }
+
+        // Envío de Cotización por WhatsApp
+        function sendToWhatsapp() {
+            const selectedServiceRadio = document.querySelector('input[name="service"]:checked');
+            const serviceValue = selectedServiceRadio ? selectedServiceRadio.value : 'full';
+            const totalText = document.getElementById('final-price').innerText;
+
+            let message = `Hola Power Wash Cycles! Quisiera agendar un servicio a domicilio con la siguiente cotización:\n\n`;
+            message += `🛵 *Cilindraje:* ${PRICING[selectedCc].label}\n`;
+            message += `🧼 *Servicio Elegido:* ${SERVICE_LABELS[serviceValue]}\n`;
+
+            let extras = [];
+            if (document.getElementById('ext-casco').checked) extras.push("Limpieza de Casco ($5)");
+            if (document.getElementById('ext-plasticos').checked) extras.push("Rest. Plásticos ($8)");
+            if (document.getElementById('ext-visor').checked) extras.push("Pulido Visor/Faro ($5)");
+            if (document.getElementById('ext-cuero').checked) extras.push("Encerado Cuero ($8)");
+            if (document.getElementById('ext-hidrofobico').checked) extras.push("Trat. Hidrofóbico ($3)");
+
+            if (extras.length > 0) {
+                message += `➕ *Adicionales:* ${extras.join(", ")}\n`;
+            }
+
+            message += `\n💰 *Total Estimado:* ${totalText}\n\n`;
+            message += `Quedo a la espera de su confirmación para coordinar la hora y dirección. ¡Gracias!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/50379563814?text=${encodedMessage}`, '_blank');
+        }
+
+        // Inicializar Estado por Defecto al Cargar
+        window.onload = function() {
+            setCc('bajo');
+        };
+    </script>
+</body>
+</html>
